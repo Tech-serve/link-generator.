@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Генератор OG-ссылки</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>OG Link Generator</h1>
+    <input type="text" id="filename" placeholder="Имя файла (promo, blog...)" />
+    <input type="text" id="url" placeholder="Куда редиректить (https://...)" />
+    <input type="text" id="title" placeholder="Заголовок (OG title)" />
+    <input type="text" id="description" placeholder="Описание (OG description)" />
+    <input type="text" id="image" placeholder="URL изображения (OG image)" />
+    <button onclick="generate()">Сгенерировать</button>
+    <textarea id="output" rows="15" readonly></textarea>
+  </div>
+  <script src="generator.js"></script>
+</body>
+</html>
